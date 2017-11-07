@@ -1,0 +1,20 @@
+.judul {
+  margin: 0 auto;
+  padding: 0;
+  
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #eee;
+}
+
+footer{
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.container{
+  background: #fff;
+}
