@@ -33,6 +33,10 @@
         <script src="<?php echo base_url() ?>aset/layout3/scripts/demo.min.js" type="text/javascript"></script>
         <script src="<?php echo base_url() ?>aset/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
         <!-- END THEME LAYOUT SCRIPTS -->
+        <script src="<?php echo base_url() ?>aset/js/datatable.js" type="text/javascript"></script>
+        <script src="<?php echo base_url() ?>aset/plugins/datatables/datatables.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url() ?>aset/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
+        <script src="http://localhost/zafishop/aset/js/jquery-ui.js"></script>
     </body>
 
 </html>

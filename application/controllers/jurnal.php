@@ -15,9 +15,9 @@ class Jurnal extends CI_Controller
         $data['body_k'] = 'jurnal';
         //$data['suggest'] =
 
-        $this->load->view('template/head', $data);
-        $this->load->view('template/body', $data);
-        $this->load->view('template/kaki', $data);
+        $this->load->view('template/caput', $data);
+        $this->load->view('template/corporis');
+        $this->load->view('template/pes');
     }
 
     public function test()

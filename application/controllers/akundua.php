@@ -15,18 +15,18 @@ class Akundua extends CI_Controller {
 		$data['body_k'] = "akundua";
 		$data['akun_dua']=$this->m_akun_dua->get_all_akun2();
 
-		$this->load->view('template/head', $data);
-		$this->load->view('template/body');
-		$this->load->view('template/kaki');
+		$this->load->view('template/caput', $data);
+        $this->load->view('template/corporis');
+        $this->load->view('template/pes');
 	}
 
 	public function create(){
 		$data['model_obj'] = $this->m_akun_dua;
 		$data['title'] = "Input akun";
 		$data['body_k'] = "create_akun";
-		$this->load->view('template/head', $data);
-		$this->load->view('template/body');
-		$this->load->view('template/kaki');
+		$this->load->view('template/caput', $data);
+        $this->load->view('template/corporis');
+        $this->load->view('template/pes');
 	}
 
 	public function edit($k){
@@ -35,9 +35,9 @@ class Akundua extends CI_Controller {
 		$data['body_k'] = "edit_akun";
 		$data['model_obj'] = $this->m_akun_dua;
 		$data['title'] = 'Edit Akun';
-		$this->load->view('template/head', $data);
-		$this->load->view('template/body');
-		$this->load->view('template/kaki');
+		$this->load->view('template/caput', $data);
+        $this->load->view('template/corporis');
+        $this->load->view('template/pes');
 	}
 
 	public function add(){

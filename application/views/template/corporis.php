@@ -32,7 +32,7 @@
                                 <i class="fa fa-circle"></i>
                             </li>
                             <li>
-                                <span>Layouts</span>
+                                <span><?=$title?></span>
                             </li>
                         </ul>
                         <!-- END PAGE BREADCRUMBS -->

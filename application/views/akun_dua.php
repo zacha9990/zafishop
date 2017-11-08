@@ -1,6 +1,7 @@
-<h3>  <span class="glyphicon glyphicon-th-list"></span> Master >> <a href="<?=site_url()?>/akundua">Data Akun</a></h3>
+<div class="portlet light">
+
     <br />
-    <a href="<?=site_url()?>/akundua/create?sumber=akundua" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i>&nbsp;Tambah akun</a>
+    <a href="<?=site_url()?>/akundua/create?sumber=akundua" class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i>&nbsp;Tambah akun</a>
 
     <br />
     <br />
@@ -52,7 +53,11 @@
 
   <script type="text/javascript">
   $(document).ready( function () {
-      $('#table_id').DataTable();
+      $('#table_id').DataTable({
+        "language": {
+          "url" : "<?php echo base_url() ?>aset/indonesian.json"
+        }
+      });
   } );
     var save_method; //for save method string
     var table;

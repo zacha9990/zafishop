@@ -11,8 +11,9 @@
         <meta content="" name="description" />
         <meta content="" name="author" />
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
-        <link rel="stylesheet" href="<?php echo base_url() ?>aset/css/main.css">
+        
         <link href="<?php echo base_url() ?>aset/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+          <link rel="stylesheet" href="<?php echo base_url() ?>aset/css/bootstrap-datepicker3.css">
         <link href="<?php echo base_url() ?>aset/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url() ?>aset/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url() ?>aset/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
@@ -25,8 +26,29 @@
         <link href="<?php echo base_url() ?>aset/layout3/css/layout.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url() ?>aset/layout3/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
         <link href="<?php echo base_url() ?>aset/layout3/css/custom.min.css" rel="stylesheet" type="text/css" />
+
+
+        <link rel="stylesheet" href="<?php echo base_url() ?>aset/css/main.css">
+        <link rel="stylesheet" href="<?php echo base_url() ?>aset/css/jquery-ui.css">
+
+
+
         <!-- END THEME LAYOUT STYLES -->
         <link rel="shortcut icon" href="favicon.ico" /> </head>
+        <!-- DATATABLES -->
+
+
+        <!-- <link rel="stylesheet" href="<?php echo base_url() ?>aset/css/jquery-ui.css">
+        <link rel="stylesheet" href="<?php echo base_url() ?>aset/css/bootstrap-datepicker3.css">
+
+        <script src="<?php echo base_url() ?>aset/js/jquery-2.2.3.min.js"></script>
+        <script src="<?php echo base_url() ?>aset/js/bootstrap.min.js"></script>
+        <script src="<?php echo base_url() ?>aset/js/jquery.dataTables.js"></script>
+        <script src="<?php echo base_url() ?>aset/js/respond.min.js"></script>
+        <script src="<?php echo base_url() ?>aset/js/jquery-ui.js"></script>
+        <script src="<?php echo base_url() ?>aset/locales/bootstrap-datepicker.id.min.js" charset="UTF-8"></script>
+        <script src="<?php echo base_url() ?>aset/js/bootstrap-datepicker.min.js"></script>
+ -->
     <!-- END HEAD -->
 
     <body class="page-container-bg-solid page-md">
@@ -101,18 +123,18 @@
                                 </a>
                                 <ul class="dropdown-menu pull-left">
                                     <li class=" ">
-                                        <a href="layout_mega_menu_light.html" class="nav-link  "> Data kelompok akun </a>
+                                        <a href="<?=site_url()?>/akunsatu" class="nav-link  "> Data kelompok akun </a>
                                     </li>
                                     <li class=" ">
-                                        <a href="layout_top_bar_light.html" class="nav-link  "> Data akun </a>
+                                        <a href="<?=site_url()?>/akundua" class="nav-link  "> Data akun </a>
                                     </li>
                                     <li class=" ">
-                                        <a href="layout_fluid_page.html" class="nav-link  "> Data saldo awal </a>
+                                        <a href="<?=site_url()?>/saldoawal" class="nav-link  "> Data saldo awal </a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="menu-dropdown classic-menu-dropdown ">
-                                <a href="javascript:;"> Jurnal
+                                <a href="jurnal"> Jurnal
                                     <span class="arrow"></span>
                                 </a>
                             </li>

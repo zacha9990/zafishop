@@ -1,14 +1,10 @@
-
-    <h3>  <span class="glyphicon glyphicon-th-list"></span> Master >> <a href="<?=site_url()?>/akunsatu"> Data Kelompok Akun</a> </h3>
-    <br />
-    <a href="<?=site_url()?>/akunsatu/create" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i>&nbsp;Tambah Kelompok Akun</a>
-
-    <br />
-    <br />
-
+<div class="portlet light">
+      <a href="<?=site_url()?>/akunsatu/create" class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i>&nbsp;Tambah Kelompok Akun</a>
+      <br />
+      <br />
     <div id="message"><?php echo $this->session->flashdata('message'); ?></div>
 
-    <table id="table_id" class="table table-stripped table-bordered" cellspacing="0" width="100%">
+    <table id="table_id" class="table table-stripped table-bordered table-hover datatable" cellspacing="0" width="100%">
         <thead>
           <tr>
             <th>No Akun</th>
@@ -28,8 +24,8 @@
 
               <td><?php echo $item->posisi; ?></td>
               <td>
-                <a href="<?=site_url()?>/akunsatu/edit/<?=$item->no_akun1?>" class="btn btn-default"><b><i style="color:blue"class="glyphicon glyphicon-pencil"></i></b></a>
-                <button class="btn btn-danger" onclick="delete_akun(<?php echo $item->no_akun1; ?>)"><i class="glyphicon glyphicon-trash"></i></button>
+                <a href="<?=site_url()?>/akunsatu/edit/<?=$item->no_akun1?>" class="btn btn-default"><b><i style="color:blue"class="glyphicon glyphicon-pencil" title="ubah"></i></b></a>
+                <button title="hapus" class="btn btn-danger" onclick="delete_akun(<?php echo $item->no_akun1; ?>)"><i class="glyphicon glyphicon-trash"></i></button>
               </td>
             </tr>
             <?php }?>
@@ -55,7 +51,11 @@
 
   <script type="text/javascript">
   $(document).ready( function () {
-      $('#table_id').DataTable();
+      $('#table_id').DataTable({
+        "language": {
+          "url" : "<?php echo base_url() ?>aset/indonesian.json"
+        }
+      });
   } );
     var save_method; //for save method string
     var table;
@@ -247,7 +247,8 @@
     </div><!-- /.modal -->
   <!-- End Bootstrap modal -->
 
-  <div class="col-md-2"></div>
+
+  
   <script type="text/javascript">
     $(document).ready(function(){
       //alert(1);

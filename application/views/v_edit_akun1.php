@@ -10,6 +10,7 @@
     $type = 'ubah';
   }
 ?>
+<div class="portlet light">
 <?=anchor('akunsatu', '<span class="glyphicon glyphicon-arrow-left"></span>&nbsp; kembali', array('class' => 'btn btn-primary'))?>
 <?=form_open("akunsatu/$type", array('class' => 'form-horizontal', 'id' =>'form', 'name' => 'form' ))?>
 
@@ -58,10 +59,7 @@
     </div>
   </div>
 <?=form_close()?>
-
-
 </div>
-<div class="col-md-2"></div>
 
-</div> <!-- end class row -->
-</div> <!-- end class container -->
+
+

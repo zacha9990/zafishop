@@ -129,9 +129,9 @@ class Akunsatu extends CI_Controller
     {
         $data['title'] = "Input kelompok akun";
         $data['body_k'] = "create_kelompok_akun";
-        $this->load->view('template/head', $data);
-        $this->load->view('template/body');
-        $this->load->view('template/kaki');
+        $this->load->view('template/caput', $data);
+        $this->load->view('template/corporis');
+        $this->load->view('template/pes');
     }
 
     public function edit($k)
@@ -140,8 +140,8 @@ class Akunsatu extends CI_Controller
         $data['akun'] = $result;
         $data['body_k'] = "edit_kelompok_akun";
         $data['title'] = 'Edit Kelompok Akun';
-        $this->load->view('template/head', $data);
-        $this->load->view('template/body');
-        $this->load->view('template/kaki');
+        $this->load->view('template/caput', $data);
+        $this->load->view('template/corporis');
+        $this->load->view('template/pes');
     }
 }

@@ -1,3 +1,4 @@
+<div class="portlet light">
 <div class="alert alert-info">Masukkan nama akun, jika akun tidak ditemukan maka &nbsp; <span class="glyphicon glyphicon-arrow-right"></span> &nbsp; <?=anchor('akundua/create?sumber=jurnal', ' Buat baru', array('class' => 'btn btn-default btn-sm') )?></div>
 <?=form_open("jurnal/add", array('class' => 'form-horizontal', 'id' =>'form', 'name' => 'form' ))?>
 
@@ -93,16 +94,20 @@
 <!-- end class input_fields_wrap -->
 
 
+
 <div class="form-group">
 	<div class="col-md-12">
 		<?php echo form_submit('mysubmit', 'Submit!', array("class" => "btn btn-primary"));?>
 	</div>
 </div>
+</div>
 
 <?php form_close()?>
 <script src="<?php echo base_url() ?>aset/js/jquery-2.2.3.min.js" ></script>
-<script src="<?php echo base_url() ?>aset/locales/bootstrap-datepicker.id.min.js" charset="UTF-8"></script>
-<script src="<?php echo base_url() ?>aset/js/jquery.form-validator.min.js" charset="UTF-8"></script><script type="text/javascript">
+ <script src="<?php echo base_url() ?>aset/locales/bootstrap-datepicker.id.min.js" charset="UTF-8"></script>
+<script src="<?php echo base_url() ?>aset/js/jquery.form-validator.min.js" charset="UTF-8"></script>
+
+<script type="text/javascript">
       $.validate();
 $(document).ready(function() {
 	var max_fields = 10;
@@ -181,8 +186,4 @@ $('#date').click(function() {
 });
 </script>
 
-</div>
-<div class="col-md-2"></div>
 
-</div> <!-- end class row -->
-</div> <!-- end class container -->

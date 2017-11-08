@@ -1,3 +1,4 @@
+<div class="portlet light">
 <?php
   if (empty($akun)){
     $akun = new stdClass();
@@ -10,13 +11,13 @@
     $type = 'ubah';
   }
 
-  $sumber = $_GET['sumber'];
+  // $sumber = $_GET['sumber'];
 
 ?>
 
 
 
-<?=anchor("$sumber", '<span class="glyphicon glyphicon-arrow-left"></span>&nbsp; kembali', array('class' => 'btn btn-primary'))?>
+<?=anchor("akundua", '<span class="glyphicon glyphicon-arrow-left"></span>&nbsp; kembali', array('class' => 'btn btn-primary'))?>
 <?=form_open("akundua/$type", array('class' => 'form-horizontal', 'id' =>'form', 'name' => 'form' ))?>
   <div class="form-body">
 
@@ -66,10 +67,6 @@
   </div> <!-- end class form-body -->
 
 <?=form_close()?>
+</div>
 
 <!-- for footer -->
-
-<div class="col-md-2"></div>
-
-</div> <!-- end class row -->
-</div> <!-- end class container -->
