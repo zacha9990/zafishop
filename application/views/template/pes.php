@@ -36,7 +36,9 @@
         <script src="<?php echo base_url() ?>aset/js/datatable.js" type="text/javascript"></script>
         <script src="<?php echo base_url() ?>aset/plugins/datatables/datatables.min.js" type="text/javascript"></script>
         <script src="<?php echo base_url() ?>aset/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
-        <script src="http://localhost/zafishop/aset/js/jquery-ui.js"></script>
+        <script src="<?php echo base_url() ?>aset/js/jquery-ui.js"></script>
+        <script src="<?php echo base_url() ?>aset/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url() ?>aset/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.id.min.js" type="text/javascript"></script>
     </body>
 
 </html>

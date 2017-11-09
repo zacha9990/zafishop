@@ -23,7 +23,7 @@
 
 
               <td><?php echo $item->posisi; ?></td>
-              <td>
+              <td class="fit">
                 <a href="<?=site_url()?>/akunsatu/edit/<?=$item->no_akun1?>" class="btn btn-default"><b><i style="color:blue"class="glyphicon glyphicon-pencil" title="ubah"></i></b></a>
                 <button title="hapus" class="btn btn-danger" onclick="delete_akun(<?php echo $item->no_akun1; ?>)"><i class="glyphicon glyphicon-trash"></i></button>
               </td>

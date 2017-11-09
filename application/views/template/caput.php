@@ -5,7 +5,7 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>Zafishop | Blank Page</title>
+        <title>Zafishop | <?=$title?></title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
@@ -17,6 +17,7 @@
         <link href="<?php echo base_url() ?>aset/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url() ?>aset/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url() ?>aset/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url() ?>aset/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN THEME GLOBAL STYLES -->
         <link href="<?php echo base_url() ?>aset/css/components-md.min.css" rel="stylesheet" id="style_components" type="text/css" />
@@ -134,7 +135,7 @@
                                 </ul>
                             </li>
                             <li class="menu-dropdown classic-menu-dropdown ">
-                                <a href="jurnal"> Jurnal
+                                <a href="<?=site_url()?>/jurnal"> Jurnal
                                     <span class="arrow"></span>
                                 </a>
                             </li>

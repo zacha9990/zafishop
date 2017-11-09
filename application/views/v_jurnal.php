@@ -16,7 +16,7 @@
 	<div class="col-md-5">
 		<div class="input-group">
 			<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-			<input class="form-control" id="date" name="date" placeholder="BB/HH/TTTT" type="text" />
+			<input class="form-control input-medium date-picker" id="date" name="date" placeholder="BB/HH/TTTT" type="text" />
 		</div>
 	</div>
 </div>

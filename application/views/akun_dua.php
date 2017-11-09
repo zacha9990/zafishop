@@ -27,7 +27,7 @@
 
 
               <td><?php echo $item->nama_akun1; ?></td>
-              <td>
+              <td class="fit">
                 <a href="<?=site_url()?>/akundua/edit/<?=$item->no_akun2?>" class="btn btn-default"><b><i style="color:blue;" class="glyphicon glyphicon-pencil"></i></b></a>
                 <button class="btn btn-danger" onclick="delete_akun(<?php echo $item->no_akun2; ?>)"><i class="glyphicon glyphicon-trash"></i></button>
               </td>

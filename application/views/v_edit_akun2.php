@@ -11,13 +11,17 @@
     $type = 'ubah';
   }
 
-  // $sumber = $_GET['sumber'];
+  if (isset($_GET['sumber'])) {
+    $sumber = $_GET['sumber']; 
+  }  else {
+    $sumber='';
+  }
 
 ?>
 
 
 
-<?=anchor("akundua", '<span class="glyphicon glyphicon-arrow-left"></span>&nbsp; kembali', array('class' => 'btn btn-primary'))?>
+<?=anchor($sumber, '<span class="glyphicon glyphicon-arrow-left"></span>&nbsp; kembali', array('class' => 'btn btn-primary'))?>
 <?=form_open("akundua/$type", array('class' => 'form-horizontal', 'id' =>'form', 'name' => 'form' ))?>
   <div class="form-body">
 

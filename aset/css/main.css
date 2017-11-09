@@ -9,6 +9,10 @@ body {
   padding:0px 15px;
 }
 
+.fit{
+  white-space: nowrap;
+}
+
 body {
 	padding-top: 70px;
 	/* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
