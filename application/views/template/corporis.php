@@ -68,6 +68,10 @@
               $this->load->view('v_jurnal');
               break;
 
+            case 'saldoawal':
+            $this->load->view('v_saldoAwal');
+            break;
+
 
             default:
               $this->load->view('index');

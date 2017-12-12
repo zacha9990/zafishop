@@ -71,7 +71,9 @@ class Jurnal extends CI_Controller
             }
 
             if ($kredit != $debit) {
-                echo "Tidak Balance";
+                $this->session->set_flashdata('message', '<div class="alert alert-danger">Data tidak balance</div>');
+
+                redirect('jurnal');
             } else {
                 $i=0;
                 foreach ($nama_akun as $key) {

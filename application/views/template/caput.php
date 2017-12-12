@@ -18,6 +18,12 @@
         <link href="<?php echo base_url() ?>aset/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url() ?>aset/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url() ?>aset/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url() ?>aset/plugins/bootstrap-toastr/toastr.min.css" rel="stylesheet" type="text/css" />
+
+        <link href="<?php echo base_url() ?>aset/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+
+        <link href="<?php echo base_url() ?>aset/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
+
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN THEME GLOBAL STYLES -->
         <link href="<?php echo base_url() ?>aset/css/components-md.min.css" rel="stylesheet" id="style_components" type="text/css" />
@@ -31,6 +37,12 @@
 
         <link rel="stylesheet" href="<?php echo base_url() ?>aset/css/main.css">
         <link rel="stylesheet" href="<?php echo base_url() ?>aset/css/jquery-ui.css">
+
+        <style>
+            .ui-autocomplete-loading {
+              background: url('<?php echo base_url() ?>aset/ui-anim_basic_16x16.gif') no-repeat right center
+            }
+        </style>
 
 
 

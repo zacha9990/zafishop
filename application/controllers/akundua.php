@@ -132,6 +132,19 @@ class Akundua extends CI_Controller {
 		echo json_encode(array("status"=>TRUE));
 	}
 
+	public function ubah_saldo_awal(){
+		$no_akun = $this->input->post('key');
+		$data =array(
+			"saldo_awal" => $this->input->post('saldo'),
+		);
+
+		if($this->m_akun_dua->ubah_saldo($no_akun, $data)){
+			echo json_encode(array("status" => TRUE, "saldo"=>$this->input->post('saldo'))); 
+		}else{
+			echo json_encode(array("status"=>FALSE));
+		}
+	}
+
 	public function test() {
     $this->load->view('test_page');
   }

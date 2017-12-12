@@ -27,6 +27,7 @@
         <!-- END CORE PLUGINS -->
         <!-- BEGIN THEME GLOBAL SCRIPTS -->
         <script src="<?php echo base_url() ?>aset/js/app.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url() ?>aset/js/jquery.bootstrap-growl.js" type="text/javascript"></script>
         <!-- END THEME GLOBAL SCRIPTS -->
         <!-- BEGIN THEME LAYOUT SCRIPTS -->
         <script src="<?php echo base_url() ?>aset/layout3/scripts/layout.min.js" type="text/javascript"></script>
@@ -35,8 +36,11 @@
         <!-- END THEME LAYOUT SCRIPTS -->
         <script src="<?php echo base_url() ?>aset/js/datatable.js" type="text/javascript"></script>
         <script src="<?php echo base_url() ?>aset/plugins/datatables/datatables.min.js" type="text/javascript"></script>
-        <script src="<?php echo base_url() ?>aset/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
+        <script src="<?php echo base_url() ?>aset/plugins/datatables/datatables.min.js" type="text/javascript"></script>
+        <script src="<?php echo base_url() ?>aset/plugins/bootstrap-toastr/toastr.min.js" type="text/javascript"></script>
+        
         <script src="<?php echo base_url() ?>aset/js/jquery-ui.js"></script>
+        <script src="<?php echo base_url() ?>aset/js/scripts/ui-toastr.js"></script>
         <script src="<?php echo base_url() ?>aset/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
         <script src="<?php echo base_url() ?>aset/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.id.min.js" type="text/javascript"></script>
     </body>

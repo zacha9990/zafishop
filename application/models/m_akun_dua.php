@@ -55,6 +55,21 @@ class M_akun_dua extends CI_Model
     $this->db->delete($this->table);
   }
 
+  public function ubah_saldo($kode, $data){
+    $this->db->where('no_akun2', $kode);
+    $this->db->update($this->table, $data);
+
+    if (!is_numeric($data['saldo_awal'])){
+      return false;
+    }
+
+    if ($this->db->affected_rows() > 0){
+      return true;
+    }else {
+      return false;
+    }
+  }
+
 
 }
 

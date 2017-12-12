@@ -1,61 +1,68 @@
 <div class="portlet light">
-<div class="alert alert-info">Masukkan nama akun, jika akun tidak ditemukan maka &nbsp; <span class="glyphicon glyphicon-arrow-right"></span> &nbsp; <?=anchor('akundua/create?sumber=jurnal', ' Buat baru', array('class' => 'btn btn-default btn-sm') )?></div>
-<?=form_open("jurnal/add", array('class' => 'form-horizontal', 'id' =>'form', 'name' => 'form' ))?>
 
-<!-- <input name="nama_akun2" placeholder="Nama Akun 2" class="form-control" type="hidden">-->
-<div class="input_fields_wrap">
-<div id="message"><?php echo $this->session->flashdata('message'); ?></div>
-
-<div class="form-group">
-	<div class="col-md-5">
-		<button style="color:#000; font-weight: bold;" class="btn btn-info add_field_button">Tambah field baru</button>
+<div class="row">
+	<div class="alert alert-info col-xs-12">
+		Masukkan nama akun, jika akun tidak ditemukan maka &nbsp; <span class="glyphicon glyphicon-arrow-right"></span> &nbsp; 
+		<?=anchor('akundua/create?sumber=jurnal', ' Buat baru', array('class' => 'btn btn-default btn-sm') )?>
 	</div>
 </div>
 
-<div class="form-group">
-	<div class="col-md-5">
-		<div class="input-group">
-			<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-			<input class="form-control input-medium date-picker" id="date" name="date" placeholder="BB/HH/TTTT" type="text" />
+
+	<?=form_open("jurnal/add", array('class' => 'form-horizontal', 'id' =>'form', 'name' => 'form' ))?>
+		<div class="input_fields_wrap">
+			<div id="message"><?php echo $this->session->flashdata('message'); ?></div>
+
+		<div class="form-group">
+			<div class="col-md-5">
+				<button style="color:#000; font-weight: bold;" class="btn btn-info add_field_button">Tambah field baru</button>
+			</div>
 		</div>
-	</div>
-</div>
 
-<div class="form-group">
-	<div class="col-md-1">
-		<label for="uraian">Uraian</label>
-	</div>
-	<div class="input-group col-md-10">
-		<textarea name="uraian" rows="1" class="form-control" style="width:100%"></textarea>
-	</div>
-</div>
-<div class="form-group">
-	<div class="col-md-3">
-		<input data-validation="required" name="nama_akun2[]" id="nama_akun2-1" placeholder="Nama Akun 2" class="form-control" type="text">
-	</div>
-	<div class="col-md-2">
-		<select name="posisi[]" class="form-control">
-			<option value="" disabled selected>D/K</option>
-			<option value="debit">Debet</option>
-			<option value="kredit">Kredit</option>
-		</select>
-	</div>
-	<label class="control-label col-md-1">No</label>
-	<div class="col-md-2">
-		<input name="no_akun2[]" id="no_akun2-1" placeholder="kode akun" class="form-control" type="text" readonly="readonly">
-	</div>
-	<div class="col-md-3">
-		<div class="input-group">
-			<span class="input-group-addon col-1">Rp.</span>
-			<input data-validation="number" name="jumlah[]" placeholder="Jumlah" class="form-control" type="text">
+		<div class="form-group">
+			<div class="col-md-5">
+				<div class="input-group">
+					<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+					<input class="form-control input-medium date-picker" id="date" name="date" placeholder="BB/HH/TTTT" type="text" value="<?php echo set_value('date'); ?>" />
+				</div>
+			</div>
 		</div>
-	</div>
-	<div class="col-md-1">
-	</div>
-	<div class="col-md-12">
-		<?php echo validation_errors(); ?>
-	</div>
-</div>
+
+		<div class="form-group">
+			<div class="col-md-1">
+				<label for="uraian">Uraian</label>
+			</div>
+			<div class="input-group col-md-10">
+				<textarea name="uraian" rows="1" class="form-control" value="<?php echo set_value('uraian'); ?>" style="width:100%" ></textarea>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="col-md-3">
+				<input data-validation="required" name="nama_akun2[]" id="nama_akun2-1" placeholder="Nama Akun 2" class="form-control" type="text">
+			</div>
+			<div class="col-md-2">
+				<select name="posisi[]" class="form-control">
+					<option value="" disabled selected>D/K</option>
+					<option value="debit">Debet</option>
+					<option value="kredit">Kredit</option>
+				</select>
+			</div>
+			<label class="control-label col-md-1">No</label>
+			<div class="col-md-2">
+				<input name="no_akun2[]" id="no_akun2-1" placeholder="kode akun" class="form-control" type="text" readonly="readonly">
+			</div>
+			<div class="col-md-3">
+				<div class="input-group">
+					<span class="input-group-addon col-1">Rp.</span>
+					<input data-validation="number" name="jumlah[]" placeholder="Jumlah" class="form-control" type="text">
+				</div>
+			</div>
+			<div class="col-md-1">
+			</div>
+			<div class="col-md-12">
+				<?php echo validation_errors(); ?>
+			</div>
+		</div>
 	<!-- end class form_group -->
 
 	<div class="form-group">
@@ -64,10 +71,10 @@
 		</div>
 		<div class="col-md-2">
 			<select name="posisi[]" class="form-control">
-      <option value="" disabled selected>D/K</option>
-      <option value="debit">Debet</option>
-      <option value="kredit">Kredit</option>
-    </select>
+				<option value="" disabled selected>D/K</option>
+				<option value="debit">Debet</option>
+				<option value="kredit">Kredit</option>
+			</select>
 		</div>
 		<label class="control-label col-md-1">No</label>
 		<div class="col-md-2">
@@ -95,11 +102,13 @@
 
 
 
-<div class="form-group">
-	<div class="col-md-12">
-		<?php echo form_submit('mysubmit', 'Submit!', array("class" => "btn btn-primary"));?>
+
+	<div class="form-group">
+		<div class="col-md-12">
+			<?php echo form_submit('mysubmit', 'Submit!', array("class" => "btn btn-primary"));?>
+		</div>
 	</div>
-</div>
+
 </div>
 
 <?php form_close()?>
